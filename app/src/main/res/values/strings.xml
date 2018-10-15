@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">BacheSMS</string>
+
+    <string name="my_phone">54663598</string>
+    <string name="number">Número</string>
+    <string name="pin">PIN</string>
+    <string name="recargar_cuenta">Recargar cuenta:</string>
+    <string name="saldo">Saldo</string>
+
+    <string name="enviar_sms">Enviar SMS</string>
+    <string name="recargar_bachecubano">Recargar Bachecubano</string>
+    <string name="celular">Celular</string>
+    <string name="agregar_desde_contactos">Agregar desde contactos</string>
+    <string name="foto_de_perfil">Foto de perfil</string>
+    <string name="seleccionar_foto">Seleccionar foto</string>
+    <string name="su_celular">Su celular:</string>
+    <string name="config">Configuración</string>
+    <string name="sent">SMS Enviados</string>
+    <string name="splash_screen">BacheSMS Splash Screen</string>
+    <string name="tomar_foto">Tomar foto</string>
+    <string name="phone_placeholder">51234455</string>
+    <string name="su_nombre">Su nombre:</string>
+    <string name="pepe">Pepe</string>
+    <string name="actualizar_perfil">Actualizar perfil</string>
+    <string name="topup">Recargar</string>
+    <string name="profile">Perfil</string>
+    <string name="balance">Consultar saldo</string>
+    <string name="example_text">hi man, how are you?</string>
+    <string name="log_phone">+5354663598</string>
+    <string name="time">11:40</string>
+    <string name="sms_masivo">SMS Masivo</string>
+    <string name="example_massive_text">Coloque los números separados\npor coma.\nEjemplo:\n+53554663598,+5355149081</string>
+    <string name="mensaje_a_enviar">Mensaje a enviar.</string>
+</resources>

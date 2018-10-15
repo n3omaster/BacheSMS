@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:key="pref_key_nauta_settings"
+        android:title="Configuración Correo Nauta">
+        <EditTextPreference
+            android:defaultValue="pepe@nauta.cu"
+            android:key="pref_key_nauta_user"
+            android:singleLine="true"
+            android:title="Correo nauta" />
+        <EditTextPreference
+            android:defaultValue="12345678"
+            android:key="pref_key_nauta_pass"
+            android:singleLine="true"
+            android:title="Contraseña nauta" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

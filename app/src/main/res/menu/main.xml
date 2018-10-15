@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/massive_send"
+        android:title="@string/sms_masivo"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_sent"
+        android:title="@string/sent"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_profile"
+        android:title="@string/profile"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_topup"
+        android:title="@string/topup"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_balance"
+        android:title="@string/balance"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_config"
+        android:title="@string/config"
+        app:showAsAction="never" />
+</menu>

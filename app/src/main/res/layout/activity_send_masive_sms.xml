@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimarySolid">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <LinearLayout
+            android:id="@+id/PhoneInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/numbers_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_edit"
+                android:gravity="top"
+                android:hint="@string/example_massive_text"
+                android:inputType="textMultiLine|number|numberSigned"
+                android:lines="6"
+                android:maxLength="160"
+                android:padding="6dp"
+                android:textColor="@color/colorPrimarySolid"
+                android:textSize="20sp"
+                android:autofillHints="" />
+
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/sms_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PhoneInputLayout"
+            android:layout_marginTop="10dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="160"
+            app:counterTextAppearance="@style/CounterStyle">
+
+            <EditText
+                android:id="@+id/ed_sms_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_edit"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:lines="6"
+                android:maxLength="160"
+                android:hint="@string/mensaje_a_enviar"
+                android:padding="6dp"
+                android:textColor="@color/colorPrimarySolid"
+                android:textSize="20sp"
+                android:autofillHints="" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/sendSMS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sms_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/my_button_bg"
+            android:shadowColor="@color/colorPrimary"
+            android:shadowDx="5"
+            android:shadowDy="8"
+            android:shadowRadius="6"
+            android:text="@string/enviar_sms"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</ScrollView>

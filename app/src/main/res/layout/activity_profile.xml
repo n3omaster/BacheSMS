@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/profilePicture"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:contentDescription="@string/foto_de_perfil"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile_picture" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/profilePicture"
+            android:layout_alignEnd="@+id/profilePicture"
+            android:layout_alignRight="@+id/profilePicture"
+            android:contentDescription="@string/tomar_foto"
+            android:onClick="loadImageFromCamera"
+            android:src="@android:drawable/ic_menu_camera" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/profilePicture"
+            android:layout_alignLeft="@+id/profilePicture"
+            android:layout_alignStart="@+id/profilePicture"
+            android:contentDescription="@string/seleccionar_foto"
+            android:onClick="loadImageFromLibrary"
+            android:src="@android:drawable/ic_menu_upload" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/cellphone"
+            android:layout_alignLeft="@+id/cellphone"
+            android:layout_alignStart="@+id/cellphone"
+            android:text="@string/su_celular"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/cellphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profilePicture"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/round_edit"
+            android:hint="@string/phone_placeholder"
+            android:inputType="phone"
+            android:padding="5dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:autofillHints="" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/name"
+            android:layout_alignLeft="@+id/name"
+            android:layout_alignStart="@+id/name"
+            android:text="@string/su_nombre"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cellphone"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/round_edit"
+            android:hint="@string/pepe"
+            android:inputType="textAutoComplete|text"
+            android:padding="5dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:autofillHints="" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/my_button_bg"
+            android:onClick="updateProfileData"
+            android:text="@string/actualizar_perfil"
+            android:textColor="@color/colorAccent" />
+
+    </RelativeLayout>
+
+</ScrollView>
